@@ -1,15 +1,17 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 import { FaArrowUp } from "react-icons/fa6";
 
 function Landing() {
+    
   return (
-    <div className='w-full h-screen bg-zinc-900 pt-1'>
+    <div data-scroll data-scroll-speed="-.4" className='w-full h-screen bg-zinc-900 pt-1'>
         <div className="textstructure mt-40 px-16">
 
             {["We Create","Eye-opening","Presentations"].map((item,index)=>{
                 return <div className="masker font-['Founders Grotesk'] overflow-hidden">
                 <div className="w-fit flex items-center ">
-                {index==1 && (<div className='w-[9vw] h-[5.8vw] bg-green-500 mt-[1vw] mr-[1vw] rounded-md overflow-hidden'><img className='h-full' src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg" alt="" /></div>)}
+                {index==1 && (<motion.div initial={{width:0}} animate={{width:"9vw"}} transition={{ease:[0.76,0,0.24,1],duration:1}}  className='w-[9vw] h-[5.8vw] bg-green-500 mt-[1vw] mr-[1vw] rounded-md overflow-hidden'><img className='h-full' src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg" alt="" /></motion.div>)}
                 <h1 key={index} className='text-[8vw] font-bold uppercase leading-[7vw] tracking-tighter'>{item}</h1>
                 </div>
                 </div>

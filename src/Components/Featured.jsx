@@ -2,7 +2,7 @@ import React from 'react'
 
 function Featured() {
   return (
-    <div className='w-full min-h-screen bg-zinc-900 text-white '>
+    <div className='w-full min-h-screen bg-zinc-900 text-white pb-8'>
         <h1 className='text-5xl mt-20 mx-16'>Featured Projects</h1>
         <div className="w-full border-t-[0.5px] border-[#ffffff] px-0 pt-10  mt-16 "></div>
         <div className="row w-full flex  px-16">
@@ -30,10 +30,13 @@ function Featured() {
             
             </div>
         </div>
-        <div className="row w-full flex  px-16 py-16">
+        <div className="row w-full flex relative px-16 py-16">
+            
             <div className="box w-1/2  ">
+            
             <h1 className='uppercase mx-4'>Fyde</h1>
             <div className="m-4 h-[70vh] bg-[url('https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-1326x1101.png')] bg-cover cursor-pointer bg-center rounded-lg">
+            {/* <h1 className='absolute text-[12rem] left-1/3 top-1/4 text-[#afd429] font-bold tracking-tighter font-["Founders Grotesk"]'>FYDE</h1> */}
             </div>
             <div className="btn-row flex gap-2 mx-4">
                 <div className="btn border-solid border-[1px] px-3 py-1 rounded-full border-white uppercase"> Audit</div>
@@ -46,6 +49,7 @@ function Featured() {
             <div className="box  w-1/2 ">
             <h1 className='uppercase mx-4'>trawa</h1>
             <div className="m-4 h-[70vh] cursor-pointer bg-[url('https://ochi.design/wp-content/uploads/2023/08/Frame-3875-1326x1101.jpg')] bg-cover bg-center rounded-lg">
+            {/* <h1 className='absolute text-[12rem] left-1/3 top-1/4 text-[#afd429] font-bold tracking-tighter font-["Founders Grotesk"]'>TRAWA</h1> */}
 
             </div>
             <div className="btn-row flex gap-2 mx-4">
@@ -56,8 +60,13 @@ function Featured() {
                 
             </div>
             
+            
             </div>
+            
         </div>
+        <button className='px-6  py-3 rounded-full flex gap-10 items-center text-lg uppercase text-zinc-900  bg-zinc-100 mt-8 mx-auto '> View All case studies
+                        <div className="w-3 h-3 bg-zinc-900 rounded-full"></div>
+                    </button>
         
     </div>
   )

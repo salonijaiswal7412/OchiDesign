@@ -35,7 +35,7 @@ function Featured() {
             <div className="box w-1/2  ">
             
             <h1 className='uppercase mx-4'>Fyde</h1>
-            <div className="m-4 h-[70vh] bg-[url('https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-1326x1101.png')] bg-cover cursor-pointer bg-center rounded-lg">
+            <div className="m-4 h-[70vh] bg-[url('https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-1326x1101.png')] bg-cover cursor-pointer bg-center rounded-lg ">
             {/* <h1 className='absolute text-[12rem] left-1/3 top-1/4 text-[#afd429] font-bold tracking-tighter font-["Founders Grotesk"]'>FYDE</h1> */}
             </div>
             <div className="btn-row flex gap-2 mx-4">
